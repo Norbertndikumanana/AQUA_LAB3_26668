@@ -1,0 +1,16 @@
+# Visual Studio / .NET build output
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.cache
+*.log
+
+# Uploaded project documents (created when the app runs)
+Documents/
+
+# OS files
+Thumbs.db
+.DS_Store
