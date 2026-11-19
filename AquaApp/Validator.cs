@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace AquaApp.Helpers
+namespace AquaApp
 {
     public static class Validator
     {

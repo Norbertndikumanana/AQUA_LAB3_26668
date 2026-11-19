@@ -28,141 +28,141 @@ namespace AquaApp.Views
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblHeading = new System.Windows.Forms.Label();
-            this.lblHint = new System.Windows.Forms.Label();
-            this.dgvProjects = new System.Windows.Forms.DataGridView();
-            this.lblReviewer = new System.Windows.Forms.Label();
-            this.cboReviewer = new System.Windows.Forms.ComboBox();
-            this.btnAssign = new System.Windows.Forms.Button();
-            this.btnRemoveReviewer = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjects)).BeginInit();
-            this.SuspendLayout();
+            lblHeading = new Label();
+            lblHint = new Label();
+            dgvProjects = new DataGridView();
+            lblReviewer = new Label();
+            cboReviewer = new ComboBox();
+            btnAssign = new Button();
+            btnRemoveReviewer = new Button();
+            btnRefresh = new Button();
+            btnClose = new Button();
+            ((System.ComponentModel.ISupportInitialize)dgvProjects).BeginInit();
+            SuspendLayout();
             // 
             // lblHeading
             // 
-            this.lblHeading.AutoSize = true;
-            this.lblHeading.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblHeading.Location = new System.Drawing.Point(20, 15);
-            this.lblHeading.Name = "lblHeading";
-            this.lblHeading.Size = new System.Drawing.Size(198, 30);
-            this.lblHeading.TabIndex = 0;
-            this.lblHeading.Text = "Assign reviewers";
+            lblHeading.AutoSize = true;
+            lblHeading.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblHeading.Location = new Point(20, 15);
+            lblHeading.Name = "lblHeading";
+            lblHeading.Size = new Size(159, 25);
+            lblHeading.TabIndex = 0;
+            lblHeading.Text = "Assign reviewers";
             // 
             // lblHint
             // 
-            this.lblHint.AutoSize = true;
-            this.lblHint.ForeColor = System.Drawing.Color.DimGray;
-            this.lblHint.Location = new System.Drawing.Point(22, 48);
-            this.lblHint.Name = "lblHint";
-            this.lblHint.Size = new System.Drawing.Size(583, 20);
-            this.lblHint.TabIndex = 1;
-            this.lblHint.Text = "Projects that are Received or Under Review. Unassigned projects are listed first.";
+            lblHint.AutoSize = true;
+            lblHint.ForeColor = Color.DimGray;
+            lblHint.Location = new Point(22, 48);
+            lblHint.Name = "lblHint";
+            lblHint.Size = new Size(419, 15);
+            lblHint.TabIndex = 1;
+            lblHint.Text = "Projects that are Received or Under Review. Unassigned projects are listed first.";
             // 
             // dgvProjects
             // 
-            this.dgvProjects.Location = new System.Drawing.Point(20, 75);
-            this.dgvProjects.AllowUserToAddRows = false;
-            this.dgvProjects.AllowUserToDeleteRows = false;
-            this.dgvProjects.AllowUserToResizeRows = false;
-            this.dgvProjects.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvProjects.BackgroundColor = System.Drawing.Color.White;
-            this.dgvProjects.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProjects.MultiSelect = false;
-            this.dgvProjects.Name = "dgvProjects";
-            this.dgvProjects.Size = new System.Drawing.Size(860, 350);
-            this.dgvProjects.TabIndex = 2;
-            this.dgvProjects.ReadOnly = true;
-            this.dgvProjects.RowHeadersVisible = false;
-            this.dgvProjects.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProjects.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProjects_CellClick);
+            dgvProjects.AllowUserToAddRows = false;
+            dgvProjects.AllowUserToDeleteRows = false;
+            dgvProjects.AllowUserToResizeRows = false;
+            dgvProjects.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvProjects.BackgroundColor = Color.White;
+            dgvProjects.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvProjects.Location = new Point(20, 75);
+            dgvProjects.MultiSelect = false;
+            dgvProjects.Name = "dgvProjects";
+            dgvProjects.ReadOnly = true;
+            dgvProjects.RowHeadersVisible = false;
+            dgvProjects.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvProjects.Size = new Size(860, 350);
+            dgvProjects.TabIndex = 2;
+            dgvProjects.CellClick += dgvProjects_CellClick;
             // 
             // lblReviewer
             // 
-            this.lblReviewer.AutoSize = true;
-            this.lblReviewer.Location = new System.Drawing.Point(20, 445);
-            this.lblReviewer.Name = "lblReviewer";
-            this.lblReviewer.Size = new System.Drawing.Size(57, 20);
-            this.lblReviewer.TabIndex = 3;
-            this.lblReviewer.Text = "Reviewer";
+            lblReviewer.AutoSize = true;
+            lblReviewer.Location = new Point(20, 445);
+            lblReviewer.Name = "lblReviewer";
+            lblReviewer.Size = new Size(54, 15);
+            lblReviewer.TabIndex = 3;
+            lblReviewer.Text = "Reviewer";
             // 
             // cboReviewer
             // 
-            this.cboReviewer.FormattingEnabled = true;
-            this.cboReviewer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboReviewer.Location = new System.Drawing.Point(90, 442);
-            this.cboReviewer.Name = "cboReviewer";
-            this.cboReviewer.Size = new System.Drawing.Size(260, 23);
-            this.cboReviewer.TabIndex = 4;
+            cboReviewer.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboReviewer.FormattingEnabled = true;
+            cboReviewer.Location = new Point(90, 442);
+            cboReviewer.Name = "cboReviewer";
+            cboReviewer.Size = new Size(260, 23);
+            cboReviewer.TabIndex = 4;
             // 
             // btnAssign
             // 
-            this.btnAssign.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnAssign.ForeColor = System.Drawing.Color.White;
-            this.btnAssign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAssign.Location = new System.Drawing.Point(365, 438);
-            this.btnAssign.Name = "btnAssign";
-            this.btnAssign.Size = new System.Drawing.Size(160, 32);
-            this.btnAssign.TabIndex = 5;
-            this.btnAssign.UseVisualStyleBackColor = false;
-            this.btnAssign.Text = "Assign / Reassign";
-            this.btnAssign.Click += new System.EventHandler(this.btnAssign_Click);
+            btnAssign.BackColor = Color.SteelBlue;
+            btnAssign.FlatStyle = FlatStyle.Flat;
+            btnAssign.ForeColor = Color.White;
+            btnAssign.Location = new Point(369, 438);
+            btnAssign.Name = "btnAssign";
+            btnAssign.Size = new Size(160, 32);
+            btnAssign.TabIndex = 5;
+            btnAssign.Text = "Assign / Reassign";
+            btnAssign.UseVisualStyleBackColor = false;
+            btnAssign.Click += btnAssign_Click;
             // 
             // btnRemoveReviewer
             // 
-            this.btnRemoveReviewer.Location = new System.Drawing.Point(535, 438);
-            this.btnRemoveReviewer.Name = "btnRemoveReviewer";
-            this.btnRemoveReviewer.Size = new System.Drawing.Size(160, 32);
-            this.btnRemoveReviewer.TabIndex = 6;
-            this.btnRemoveReviewer.UseVisualStyleBackColor = true;
-            this.btnRemoveReviewer.Text = "Remove Reviewer";
-            this.btnRemoveReviewer.Click += new System.EventHandler(this.btnRemoveReviewer_Click);
+            btnRemoveReviewer.Location = new Point(535, 438);
+            btnRemoveReviewer.Name = "btnRemoveReviewer";
+            btnRemoveReviewer.Size = new Size(160, 32);
+            btnRemoveReviewer.TabIndex = 6;
+            btnRemoveReviewer.Text = "Remove Reviewer";
+            btnRemoveReviewer.UseVisualStyleBackColor = true;
+            btnRemoveReviewer.Click += btnRemoveReviewer_Click;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(705, 438);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(175, 32);
-            this.btnRefresh.TabIndex = 7;
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            btnRefresh.Location = new Point(705, 438);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(175, 32);
+            btnRefresh.TabIndex = 7;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(760, 505);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(120, 32);
-            this.btnClose.TabIndex = 8;
-            this.btnClose.UseVisualStyleBackColor = true;
-            this.btnClose.Text = "Close";
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            btnClose.Location = new Point(760, 505);
+            btnClose.Name = "btnClose";
+            btnClose.Size = new Size(120, 32);
+            btnClose.TabIndex = 8;
+            btnClose.Text = "Close";
+            btnClose.UseVisualStyleBackColor = true;
+            btnClose.Click += btnClose_Click;
             // 
             // AssignReviewerView
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 552);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnRemoveReviewer);
-            this.Controls.Add(this.btnAssign);
-            this.Controls.Add(this.cboReviewer);
-            this.Controls.Add(this.lblReviewer);
-            this.Controls.Add(this.dgvProjects);
-            this.Controls.Add(this.lblHint);
-            this.Controls.Add(this.lblHeading);
-            this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
-            this.Name = "AssignReviewerView";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AQUA - Assign Reviewers";
-            this.Load += new System.EventHandler(this.AssignReviewerView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProjects)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(900, 552);
+            Controls.Add(btnClose);
+            Controls.Add(btnRefresh);
+            Controls.Add(btnRemoveReviewer);
+            Controls.Add(btnAssign);
+            Controls.Add(cboReviewer);
+            Controls.Add(lblReviewer);
+            Controls.Add(dgvProjects);
+            Controls.Add(lblHint);
+            Controls.Add(lblHeading);
+            Font = new Font("Segoe UI", 9F);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            Name = "AssignReviewerView";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "AQUA - Assign Reviewers";
+            Load += AssignReviewerView_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvProjects).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

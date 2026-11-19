@@ -1,4 +1,4 @@
-namespace AquaApp.Helpers
+namespace AquaApp
 {
     /// <summary>Short helpers for message boxes, used by every view.</summary>
     public static class Ui

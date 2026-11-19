@@ -1,6 +1,6 @@
 using System.Security.Cryptography;
 
-namespace AquaApp.Helpers
+namespace AquaApp
 {
     /// <summary>
     /// Hashes passwords with PBKDF2 (SHA-256, 100,000 iterations, random salt).

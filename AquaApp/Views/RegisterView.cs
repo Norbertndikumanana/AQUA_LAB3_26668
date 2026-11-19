@@ -1,5 +1,4 @@
 using AquaApp.Controllers;
-using AquaApp.Helpers;
 
 namespace AquaApp.Views
 {

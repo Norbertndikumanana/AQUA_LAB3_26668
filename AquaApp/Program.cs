@@ -1,4 +1,4 @@
-using AquaApp.Data;
+using AquaApp.Controllers;
 using AquaApp.Views;
 
 namespace AquaApp
@@ -23,7 +23,7 @@ namespace AquaApp
                 MessageBox.Show(
                     "Cannot connect to the PostgreSQL database.\n\n" +
                     "1. Check that PostgreSQL is running.\n" +
-                    "2. Check the host, user name and password in Data\\DbConfig.cs.\n\n" +
+                    "2. Check the host, user name and password in dbsettings.local.json (or the AQUA_DB_* variables).\n\n" +
                     "Details: " + dbError,
                     "AQUA", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;

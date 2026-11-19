@@ -1,7 +1,7 @@
 using AquaApp.Models;
 using NHibernate.Linq;
 
-namespace AquaApp.Data
+namespace AquaApp.Controllers
 {
     public class DocumentRepository
     {

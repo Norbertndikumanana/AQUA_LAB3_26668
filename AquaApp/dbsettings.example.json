@@ -1,0 +1,7 @@
+{
+  "Host": "localhost",
+  "Port": 5432,
+  "Database": "auca1",
+  "Username": "postgres",
+  "Password": "YOUR_POSTGRES_PASSWORD"
+}

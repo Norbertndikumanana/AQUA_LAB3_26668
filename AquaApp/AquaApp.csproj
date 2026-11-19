@@ -17,4 +17,10 @@
     <PackageReference Include="Npgsql" Version="8.0.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Local DB settings (git-ignored) are copied next to the exe when present -->
+    <None Update="dbsettings.local.json" CopyToOutputDirectory="PreserveNewest" Condition="Exists('dbsettings.local.json')" />
+    <None Update="dbsettings.example.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>

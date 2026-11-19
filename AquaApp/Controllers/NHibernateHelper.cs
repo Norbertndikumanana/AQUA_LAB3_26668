@@ -1,3 +1,4 @@
+using AquaApp.Models;
 using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Dialect;
@@ -6,7 +7,7 @@ using NHibernate.Mapping.ByCode;
 using NHibernate.Tool.hbm2ddl;
 using Npgsql;
 
-namespace AquaApp.Data
+namespace AquaApp.Controllers
 {
     /// <summary>
     /// Builds the NHibernate session factory once, creates the tables automatically

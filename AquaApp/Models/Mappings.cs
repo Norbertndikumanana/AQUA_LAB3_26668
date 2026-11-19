@@ -3,7 +3,7 @@ using NHibernate;
 using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
 
-namespace AquaApp.Data
+namespace AquaApp.Models
 {
     // NHibernate "mapping by code": tells NHibernate which table and column
     // each model class and property is stored in. NHibernate creates the

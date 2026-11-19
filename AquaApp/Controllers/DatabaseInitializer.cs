@@ -1,9 +1,8 @@
-using AquaApp.Helpers;
 using AquaApp.Models;
 using NHibernate.Linq;
 using Npgsql;
 
-namespace AquaApp.Data
+namespace AquaApp.Controllers
 {
     /// <summary>
     /// Runs when the app starts:
